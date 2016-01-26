@@ -1,0 +1,24 @@
+﻿<Window x:Name="MainWindow1" x:Class="GitHubStalkerWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GitHubStalkerWPF"
+        mc:Ignorable="d"
+        Title="GitHub Stalker" Height="200" Width="400" MinWidth="400" MinHeight="200">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="121*"/>
+            <RowDefinition Height="48*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="textBoxUserName" Margin="10,45,10,2" TextWrapping="Wrap" TextAlignment="Center" FontSize="21.333" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="textBlock" Margin="10,10,10,0" TextWrapping="Wrap" Text="Enter GitHub username:" VerticalAlignment="Top" Height="30" FontSize="21.333" TextAlignment="Center" Grid.ColumnSpan="2"/>
+        <Button x:Name="button" Content="Clear" Margin="10,10,10,18" Click="button_Click" Grid.Row="1"/>
+        <Button x:Name="button1" Content="Search" Grid.Column="1" Margin="10,10,10,18" Click="button1_Click" Grid.Row="1"/>
+
+    </Grid>
+</Window>
